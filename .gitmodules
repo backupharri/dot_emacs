@@ -1,0 +1,3 @@
+[submodule "yours/pylookup"]
+	path = yours/pylookup
+	url = git@github.com:harrifeng/pylookup.git
