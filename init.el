@@ -22,3 +22,4 @@
 (require 'colortheme-setting)
 (require 'python-setting)
 (require 'yasnippet-setting)
+(require 'w3m-setting)

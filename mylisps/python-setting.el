@@ -10,3 +10,22 @@
 ;;--------python pep8----------->
 (require 'python-pep8)
 
+
+;;--------pythonlookup----------->
+;; load pylookup when compile time
+(eval-when-compile (require 'pylookup))
+
+(defconst pylookup-dir
+  (concat
+   their-lisps-path
+   "pylookup"))
+
+;; set executable file and db file
+(if (string-equal system-type "windows-nt")
+    (setq pylookup-program (concat pylookup-dir "/pylookup.bat"))
+  (setq pylookup-program (concat pylookup-dir "/pylookup.py")))
+
+(setq pylookup-db-file (concat pylookup-dir "/pylookup.db"))
+
+;; set search option if you want
+;; (setq pylookup-search-options '("--insensitive" "0" "--desc" "0"))
