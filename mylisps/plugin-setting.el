@@ -9,3 +9,6 @@
 ;;--------recentf------------------>>
 (recentf-mode 1)
  (setq recentf-max-menu-items 30)
+
+;;--------recentf------------------>>
+(require 'browse-kill-ring)
