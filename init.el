@@ -3,11 +3,13 @@
   (defconst my-emacs-path "~/.emacs.d"))
 
 (defconst my-lisps-path  (concat my-emacs-path "mylisps/") "Path for self lisps")
+(defconst their-lisps-path  (concat my-emacs-path "theirlisps/") "Path for others' lisps")
 (defconst my-templates-path (concat my-emacs-path "templates/") "Path for templates")
 
 ;; load all my-lisps 
 (load (concat my-lisps-path "my-subdirs"))
 (my-add-subdirs-to-load-path my-lisps-path)
+(my-add-subdirs-to-load-path their-lisps-path)
 
 (require 'basic-setting)
 (require 'keybind-setting)
@@ -17,3 +19,4 @@
 (require 'ibuffer-setting)
 (require 'path-setting)
 (require 'font-setting)
+(require 'colortheme-setting)
