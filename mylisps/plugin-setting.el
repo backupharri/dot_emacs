@@ -10,5 +10,10 @@
 (recentf-mode 1)
  (setq recentf-max-menu-items 30)
 
-;;--------recentf------------------>>
+;;--------browse-kill-ring--------->>
 (require 'browse-kill-ring)
+
+;;--------session------------------>>
+(require 'session)
+(add-hook 'after-init-hook
+	  'session-initialize)
