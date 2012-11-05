@@ -20,4 +20,4 @@
 (require 'path-setting)
 (require 'font-setting)
 (require 'colortheme-setting)
-(require 'pythonmode-setting)
+(require 'python-setting)
