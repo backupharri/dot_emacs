@@ -21,3 +21,4 @@
 (require 'font-setting)
 (require 'colortheme-setting)
 (require 'python-setting)
+(require 'yasnippet-setting)
