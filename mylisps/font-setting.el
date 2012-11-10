@@ -12,9 +12,9 @@
 
 (when (string-equal system-type (or "darwin" "gnu/linux"))
   (set-face-attribute
-   'default nil :font "Courier New 12")
+   'default nil :font "Monaco 16")
   (dolist (charset '(kana han symbol cjk-misc bopomofo))
     (set-fontset-font (frame-parameter nil 'font)
               charset
-              (font-spec :family "»ªÎÄËÎÌå" :size 16)))
+              (font-spec :family "Kai" :size 20)))
   )

@@ -1,6 +1,6 @@
 (if (string-equal system-type "windows-nt")
     (defconst my-emacs-path "c:/gitbox/dot_emacs/")
-  (defconst my-emacs-path "~/.emacs.d"))
+  (defconst my-emacs-path "~/.emacs.d/"))
 
 (defconst my-lisps-path  (concat my-emacs-path "mylisps/") "Path for self lisps")
 (defconst their-lisps-path  (concat my-emacs-path "theirlisps/") "Path for others' lisps")
