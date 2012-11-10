@@ -9,3 +9,5 @@
 .w3m
 *.swp
 eshell
+.abbrev_defs
+.emacs_custom.el

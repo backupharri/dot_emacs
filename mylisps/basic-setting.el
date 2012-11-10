@@ -52,4 +52,14 @@
       mac-command-modifier 'meta
       mac-option-modifier 'none)
 
+(setq abbrev-file-name
+      (concat
+       my-lisps-path
+      ".abbrev_defs"))
+
+(setq custom-file
+      (concat
+       my-lisps-path
+      ".emacs_custom.el"))
+
 (provide 'basic-setting)
