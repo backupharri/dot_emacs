@@ -1,4 +1,3 @@
-(setenv "HOME" my-emacs-path)
 
 (setq user-mail-address "harrifeng@gmail.com")
 (setq user-full-name    "harrifeng")
@@ -39,12 +38,11 @@
 ;; you have to use "cd  c:/" other than "cd /c", 'cause that way
 ;; the shell does not know how to perform auto complete
 ;; (setq explicit-shell-file-name "sh")
-(setq shell-file-name (concat exec-directory "cmdproxy.exe"))
+;(setq shell-file-name (concat exec-directory "cmdproxy.exe"))
 
 ;;Maximum Windows
 (run-with-idle-timer 1 nil 'w32-send-sys-command 61488)
 
-(setenv "HOME" my-emacs-path)
 
 ;;Cmd is used for meta for MAC
 (setq mac-option-key-is-meta nil
