@@ -1,3 +1,4 @@
+#!/usr/bin/python
 
 """
 Pylookup is to lookup entries from python documentation, especially within
