@@ -5,7 +5,9 @@
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (setq ibuffer-saved-filter-groups
       (quote (("default"
-               ("shell"  (mode . shell-mode))
+               ("shell"  (or
+			  (mode . shell-mode)
+			  (mode . eshell-mode)))
                ("python" (mode . python-mode))
                ("ruby"   (mode . ruby-mode))
                ("html"   (mode . html-mode))
