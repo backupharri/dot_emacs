@@ -8,7 +8,9 @@
                ("shell"  (or
 			  (mode . shell-mode)
 			  (mode . eshell-mode)))
-               ("python" (mode . python-mode))
+               ("python" (or
+			  (name . "^\\*Py")
+			  (mode . python-mode)))
                ("ruby"   (mode . ruby-mode))
                ("html"   (mode . html-mode))
 	       ("cc-c"   (or
@@ -17,6 +19,7 @@
                ("java"   (mode . java-mode))
                ("org"    (mode . org-mode))
 	       ("emacs"  (or
+			  (mode . emacs-lisp-mode)
 			  (name . "^\\.emacs$")
 			  (name . "^\\*scratch\\*$")))
                ("dired"  (mode . dired-mode))
