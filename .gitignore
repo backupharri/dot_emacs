@@ -11,3 +11,4 @@
 eshell
 .abbrev_defs
 .emacs_custom.el
+*.db
