@@ -23,3 +23,4 @@
 (require 'python-setting)
 (require 'yasnippet-setting)
 (require 'w3m-setting)
+(require 'shell-setting)
