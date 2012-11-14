@@ -1,3 +1,5 @@
+(provide 'basic-setting)
+
 (setq user-mail-address "harrifeng@gmail.com")
 (setq user-full-name    "harrifeng")
 
@@ -62,4 +64,10 @@
        my-lisps-path
       ".emacs_custom.el"))
 
-(provide 'basic-setting)
+
+;;UTF-8 Setting
+(setq current-language-environment "UTF-8")
+(setq locale-coding-system 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
