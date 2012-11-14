@@ -1,20 +1,5 @@
 (provide 'font-setting)
 
-(when (string-equal system-type "windows-nt")
-  "if you want to use Song, you have to use SimSun instead of Yahei"
-  (set-face-attribute
-   'default nil :font "Consolas 12") 
-  (dolist (charset '(kana han symbol cjk-misc bopomofo))
-    (set-fontset-font (frame-parameter nil 'font)
-              charset
-              (font-spec :family "Microsoft Yahei" :size 16)))
-  )
-
-(when (string-equal system-type (or "darwin" "gnu/linux"))
-  (set-face-attribute
-   'default nil :font "Monaco 16")
-  (dolist (charset '(kana han symbol cjk-misc bopomofo))
-    (set-fontset-font (frame-parameter nil 'font)
-              charset
-              (font-spec :family "Kai" :size 20)))
-  )
+(qiang-set-font
+ '("Consolas" "Monaco" "DejaVu Sans Mono" "Monospace" "Courier New") ":pixelsize=16"
+ '("宋体" "楷体" "Microsoft Yahei" "文泉驿等宽微米黑" "黑体" "新宋体" ))
