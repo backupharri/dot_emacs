@@ -5,12 +5,12 @@
   (defconst my-emacs-gnuwin32
     (concat
      my-emacs-path
-     "GnuWin32/bin")) 
+     "utils/GnuWin32/bin")) 
 
   (defconst my-tcc-path
     (concat
      my-emacs-path
-     "tcc")) 
+     "utils/tcc")) 
   
   (defconst my-python-path "c:/python26/")
   (defconst my-python-script-path
