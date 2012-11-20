@@ -6,6 +6,11 @@
     (concat
      my-emacs-path
      "GnuWin32/bin")) 
+
+  (defconst my-tcc-path
+    (concat
+     my-emacs-path
+     "tcc")) 
   
   (defconst my-python-path "c:/python26/")
   (defconst my-python-script-path
@@ -25,6 +30,7 @@
 	   my-git-path ";"
 	   my-python-path ";"
 	   my-python-script-path ";"
+	   my-tcc-path ";"
 	   (getenv "PATH")
 	   ))
   )

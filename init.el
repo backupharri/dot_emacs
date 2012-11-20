@@ -25,3 +25,4 @@
 (require 'w3m-setting)
 (require 'shell-setting)
 (require 'slime-setting)
+(require 'cc-setting)
