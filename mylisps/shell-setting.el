@@ -14,3 +14,10 @@
 (add-hook 'eshell-directory-change-hook
     (lambda ()
         (rename-buffer (concat "*EShell: " (concat default-directory "*")) t)))
+
+
+;;clean all the buffer content 
+(add-hook 'shell-mode-hook 'my-shell-mode-hook) 
+(defun my-shell-mode-hook () 
+  (local-set-key (kbd "C-x C-l") (lambda nil (interactive) (erase-buffer) (comint-send-input))) 
+  ) 
