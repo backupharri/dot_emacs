@@ -11,6 +11,8 @@
     (concat
      my-emacs-path
      "utils/tcc")) 
+
+  (defconst my-mingw-path "c:/MinGW/bin/")
   
   (defconst my-python-path "c:/python26/")
   (defconst my-python-script-path
@@ -31,6 +33,7 @@
 	   my-python-path ";"
 	   my-python-script-path ";"
 	   my-tcc-path ";"
+	   my-mingw-path ";"
 	   (getenv "PATH")
 	   ))
   )
