@@ -26,3 +26,4 @@
 (require 'shell-setting)
 (require 'slime-setting)
 (require 'cc-setting)
+(require 'javascript-setting)
