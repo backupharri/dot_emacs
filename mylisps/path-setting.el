@@ -2,6 +2,35 @@
 
 (when (string-equal system-type "windows-nt")
 
+  (if run-windows-x64
+      (defconst my-kp-path "d:/kp/DevTools/")
+    (defconst my-kp-path "c:/kp/DevTools/"))
+  
+  (defconst my-mingw-path
+    (concat
+     my-kp-path
+     "MinGW/bin/"))
+  
+  (defconst my-python-path
+    (concat
+     my-kp-path
+     "python26/"))
+  
+  (defconst my-python-script-path
+    (concat
+     my-python-path
+     "Scripts"))
+  
+  (defconst my-git-path
+    (concat
+     my-kp-path
+     "Git/bin/"))
+
+  (defconst my-lisp-path
+    (concat
+     my-kp-path
+     "CommonLisp/"))     
+
   (defconst my-emacs-gnuwin32
     (concat
      my-emacs-path
@@ -12,17 +41,6 @@
      my-emacs-path
      "utils/tcc")) 
 
-  (defconst my-mingw-path "c:/MinGW/bin/")
-  
-  (defconst my-python-path "c:/python26/")
-  (defconst my-python-script-path
-    (concat
-     my-python-path
-     "Scripts"))
-  
-  (if run-windows-x64
-      (defconst my-git-path "c:/Program Files (x86)/Git/bin/")
-    (defconst my-git-path "c:/Program Files/Git/bin/"))
 
   (setenv "PATH"
 	  (concat
@@ -34,6 +52,7 @@
 	   my-python-script-path ";"
 	   my-tcc-path ";"
 	   my-mingw-path ";"
+	   my-lisp-path ";"
 	   (getenv "PATH")
 	   ))
   )
