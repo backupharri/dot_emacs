@@ -21,6 +21,7 @@
 
 (setq column-number-mode t)
 
+(setq comment-empty-lines t)
 ;;When on one parentheses, move to the other one
 (show-paren-mode t)
 (setq show-paren-style 'parentheses)
