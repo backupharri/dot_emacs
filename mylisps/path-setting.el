@@ -6,10 +6,15 @@
       (defconst my-kp-path "d:/kp/DevTools/")
     (defconst my-kp-path "c:/kp/DevTools/"))
   
+  (defconst my-java-path
+    (concat
+     my-kp-path
+     "jdk/bin/"))
+
   (defconst my-mingw-path
     (concat
      my-kp-path
-     "MinGW/bin/"))
+     "MinGW/bin/"))  
   
   (defconst my-python-path
     (concat
@@ -53,6 +58,7 @@
 	   my-tcc-path ";"
 	   my-mingw-path ";"
 	   my-lisp-path ";"
+	   my-java-path ";"
 	   (getenv "PATH")
 	   ))
   )
