@@ -67,19 +67,19 @@
        my-lisps-path
       ".emacs_custom.el"))
 
-
 ;;UTF-8 Setting
 (set-language-environment 'Chinese-GB)
-(set-keyboard-coding-system 'euc-cn)
-(set-clipboard-coding-system 'euc-cn)
-(set-terminal-coding-system 'euc-cn)
-(set-buffer-file-coding-system 'euc-cn)
-(set-selection-coding-system 'euc-cn)
-(modify-coding-system-alist 'process "*" 'euc-cn)
-(setq default-process-coding-system '(euc-cn . euc-cn))
 (setq-default pathname-coding-system 'euc-cn)
+(setq file-name-coding-system 'euc-cn)
 
-
+;;重要提示：写在最后一行的，实际上最优先使用; 最前面一行，反而放到最后才识别。
+(prefer-coding-system 'cp950)
+(prefer-coding-system 'gb2312)
+(prefer-coding-system 'cp936)
+(prefer-coding-system 'gb18030)
+;(prefer-coding-system 'utf-16le-with-signature)
+(prefer-coding-system 'utf-16)
+(prefer-coding-system 'utf-8)
 
 ;;自动补全功能，从王垠的网站直接Copy过来的，引用一些他对此的说明
 ;;你可以设置以下 hippie-expand 的补全方式。它是一个优先列表， hippie-expand 会优
