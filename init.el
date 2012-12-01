@@ -27,3 +27,4 @@
 (require 'slime-setting)
 (require 'cc-setting)
 (require 'javascript-setting)
+(require 'modeline-setting)
