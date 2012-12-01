@@ -19,7 +19,6 @@
 (require 'ibuffer-setting)
 (require 'path-setting)
 (require 'font-setting)
-(require 'colortheme-setting)
 (require 'python-setting)
 (require 'yasnippet-setting)
 (require 'w3m-setting)
@@ -28,3 +27,4 @@
 (require 'cc-setting)
 (require 'javascript-setting)
 (require 'modeline-setting)
+(require 'colortheme-setting)
