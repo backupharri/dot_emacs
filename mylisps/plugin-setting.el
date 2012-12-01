@@ -5,6 +5,7 @@
 (require 'tramp)
 ;; tramp setting password keep time
 (setq password-cache-expiry 6000)
+(set-default 'tramp-default-proxies-alist (quote ((nil "\\`root\\'" "/ssh:hfeng@%h:"))))
 
 ;;--------recentf------------------>>
 (recentf-mode 1)

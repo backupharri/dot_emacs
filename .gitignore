@@ -13,3 +13,4 @@ eshell
 .emacs_custom.el
 *.db
 *.elc
+tramp
