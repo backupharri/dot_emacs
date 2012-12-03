@@ -1,4 +1,5 @@
 (provide 'modeline-setting)
+(byte-recompile-directory "." 0)
 
 ;; Mode line setup
 (setq-default

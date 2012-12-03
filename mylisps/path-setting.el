@@ -1,4 +1,5 @@
 (provide 'path-setting)
+(byte-recompile-directory "." 0)
 
 (when (string-equal system-type "windows-nt")
 

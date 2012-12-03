@@ -1,4 +1,5 @@
 (provide 'yasnippet-setting)
+(byte-recompile-directory "." 0)
 
 (require 'yasnippet)
 (yas/initialize)

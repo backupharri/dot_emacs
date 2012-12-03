@@ -1,4 +1,5 @@
 (provide 'python-setting)
+(byte-recompile-directory "." 0)
 
 ;; The setting sequence is strict, you have to set the
 ;; python mode first, then set the pep8.

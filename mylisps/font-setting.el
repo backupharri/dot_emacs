@@ -1,4 +1,5 @@
 (provide 'font-setting)
+(byte-recompile-directory "." 0)
 
 (qiang-set-font
  '("Consolas" "Monaco" "DejaVu Sans Mono" "Monospace" "Courier New") ":pixelsize=16"

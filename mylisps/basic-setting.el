@@ -1,4 +1,5 @@
 (provide 'basic-setting)
+(byte-recompile-directory "." 0)
 
 (setq user-mail-address "harrifeng@gmail.com")
 (setq user-full-name    "harrifeng")

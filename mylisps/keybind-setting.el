@@ -1,6 +1,5 @@
 (provide 'keybind-setting)
-
-
+(byte-recompile-directory "." 0)
 
 (global-set-key (kbd "C-c C-u")      'cua-mode)
 (global-set-key (kbd "C-w")          'backward-kill-word)

@@ -1,4 +1,5 @@
 (provide 'ibuffer-setting)
+(byte-recompile-directory "." 0)
 
 ;;--------ibuffer------------------>>
 (require 'ibuffer)
