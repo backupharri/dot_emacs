@@ -1,10 +1,5 @@
 (provide 'font-setting)
 
-(qiang-set-font
- '("Consolas" "Monaco" "DejaVu Sans Mono" "Monospace" "Courier New") ":pixelsize=16"
- '("kai" "楷体" "Microsoft Yahei" "文泉驿等宽微米黑" "黑体" "新宋体" ))
-
-
 (when (string-match system-name "sh-rd-hfeng")
   (qiang-set-font
    '("Consolas" "Monaco" "DejaVu Sans Mono" "Monospace" "Courier New") ":pixelsize=16"

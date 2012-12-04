@@ -120,3 +120,6 @@
           (lambda ()
             (if (eq major-mode 'emacs-lisp-mode)
                 (save-excursion (byte-compile-file buffer-file-name)))))
+
+(setq font-lock-verbose nil)
+(setq byte-compile-verbose nil)

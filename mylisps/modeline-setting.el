@@ -41,7 +41,7 @@
    (global-mode-string global-mode-string)
    "    "
    ; nyan-mode uses nyan cat as an alternative to %p
-   (:eval (when nyan-mode (list (nyan-create))))
+   ; (:eval (when nyan-mode (list (nyan-create))))
    "[ %z ]"
 
    ;; relative position, size of file
