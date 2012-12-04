@@ -1,5 +1,4 @@
 (provide 'helpfunc-setting)
-(byte-recompile-directory "." 0)
 
 (if (file-exists-p "C:/Program Files (x86)")
     (defvar run-windows-x64 t)

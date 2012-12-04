@@ -28,5 +28,3 @@
 (require 'javascript-setting)
 (require 'modeline-setting)
 (require 'colortheme-setting)
-
-(byte-recompile-directory "." 0)

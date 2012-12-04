@@ -1,5 +1,5 @@
 (provide 'colortheme-setting)
-(byte-recompile-directory "." 0)
+
 
 (add-to-list 'custom-theme-load-path (concat their-lisps-path
 					     "colortheme"))

@@ -1,5 +1,4 @@
 (provide 'plugin-setting)
-(byte-recompile-directory "." 0)
 
 ;;--------tramp-------------------->>
 (require 'tramp)

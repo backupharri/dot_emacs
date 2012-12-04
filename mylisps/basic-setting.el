@@ -1,5 +1,4 @@
 (provide 'basic-setting)
-(byte-recompile-directory "." 0)
 
 (setq user-mail-address "harrifeng@gmail.com")
 (setq user-full-name    "harrifeng")
@@ -116,3 +115,8 @@
     '("marmalade" .
       "http://marmalade-repo.org/packages/"))
 (package-initialize)
+
+(add-hook 'after-save-hook 
+          (lambda ()
+            (if (eq major-mode 'emacs-lisp-mode)
+                (save-excursion (byte-compile-file buffer-file-name)))))

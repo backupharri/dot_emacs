@@ -1,5 +1,4 @@
 (provide 'orgmode-setting)
-(byte-recompile-directory "." 0)
 
 ;;--------org-mode------------------>>
 ;; I don't want to use org-mode's auto type subscript.

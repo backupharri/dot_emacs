@@ -1,5 +1,4 @@
 (provide 'shell-setting)
-(byte-recompile-directory "." 0)
 
 ;; run mulitiple shell 
 (defun shell-mode-auto-rename-buffer (text)
