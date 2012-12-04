@@ -6,4 +6,4 @@
 
 ;; (load-theme 'zenburn t)
 ;; (load-theme 'solarized-dark t)
-(load-theme 'tomorrow-night-eighties t)
+(load-theme 'sanityinc-tomorrow-eighties t)
